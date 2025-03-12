@@ -38,3 +38,28 @@ const myFunction = function(){
 // console.log(typeof outsideTemp); => object
 // console.log(typeof myFunction); => function
 // console.log(typeof userEmail); => undefined
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive) => recieve a copy of declared variable
+
+// , Heap (Non-Primitive) => recive a reference of origional value
+
+let myYoutubeName = "aaryandawalkardotcom"
+let anotherName = myYoutubeName
+anotherName = "chaiaurcode"
+
+// console.log(myYoutubeName);
+// console.log(anotherName); 
+// Here as the datatype is primitive a copy of the origional data is generated and origional data doesn't get modified and lost
+
+let userOne = {
+    email:"user@gmail.com",
+    upi:"user@ybl"
+}
+let userTwo = userOne
+userTwo.email = "aaryan@gmail.com"
+
+// console.log(userOne);
+// console.log(userTwo);
+// Here datatype is non-primitive ie only reference of origional data is given which can therefore be modified and lost
